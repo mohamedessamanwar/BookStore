@@ -1,0 +1,29 @@
+﻿@using BookStore.BusnessLogic.ViewsModels.Caategory
+@model CategoryCreateDataView
+
+
+@* <Partial name="Notifigation" /> *@
+<form asp-action="Create">
+    <div asp-validation-summary="All" class="mt-2"></div>
+
+    <legend>Add Category</legend>
+    <div class="form-group">
+        <label asp-for="Name" class="form-label mt-4"></label>
+        <input asp-for="Name" class="form-control" placeholder="Name">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DisplayOrder" class="form-label mt-4"></label>
+        <input asp-for="DisplayOrder" class="form-control" placeholder="DisplayOrder">
+        <span asp-validation-for="DisplayOrder" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary m-2">Submit</button>
+
+</form>
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

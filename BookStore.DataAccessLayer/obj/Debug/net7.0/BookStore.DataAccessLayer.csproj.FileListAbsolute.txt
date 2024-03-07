@@ -1,0 +1,14 @@
+F:\BookStore\BookStore.DataAccessLayer\bin\Debug\net7.0\BookStore.DataAccessLayer.deps.json
+F:\BookStore\BookStore.DataAccessLayer\bin\Debug\net7.0\BookStore.DataAccessLayer.runtimeconfig.json
+F:\BookStore\BookStore.DataAccessLayer\bin\Debug\net7.0\BookStore.DataAccessLayer.dll
+F:\BookStore\BookStore.DataAccessLayer\bin\Debug\net7.0\BookStore.DataAccessLayer.pdb
+F:\BookStore\BookStore.DataAccessLayer\obj\Debug\net7.0\BookStore.DataAccessLayer.csproj.AssemblyReference.cache
+F:\BookStore\BookStore.DataAccessLayer\obj\Debug\net7.0\BookStore.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+F:\BookStore\BookStore.DataAccessLayer\obj\Debug\net7.0\BookStore.DataAccessLayer.AssemblyInfoInputs.cache
+F:\BookStore\BookStore.DataAccessLayer\obj\Debug\net7.0\BookStore.DataAccessLayer.AssemblyInfo.cs
+F:\BookStore\BookStore.DataAccessLayer\obj\Debug\net7.0\BookStore.DataAccessLayer.csproj.CoreCompileInputs.cache
+F:\BookStore\BookStore.DataAccessLayer\obj\Debug\net7.0\BookStore.DataAccessLayer.dll
+F:\BookStore\BookStore.DataAccessLayer\obj\Debug\net7.0\refint\BookStore.DataAccessLayer.dll
+F:\BookStore\BookStore.DataAccessLayer\obj\Debug\net7.0\BookStore.DataAccessLayer.pdb
+F:\BookStore\BookStore.DataAccessLayer\obj\Debug\net7.0\BookStore.DataAccessLayer.genruntimeconfig.cache
+F:\BookStore\BookStore.DataAccessLayer\obj\Debug\net7.0\ref\BookStore.DataAccessLayer.dll
