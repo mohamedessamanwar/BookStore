@@ -9,7 +9,8 @@ namespace BookStore.DataAccessLayer
         public static IServiceCollection AddDataAcessLayerRegistration(this IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>();
-            services.AddScoped<IUnitOfWork,UnitOfWork>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
             return services;
         }
     }

@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\BookStore.bundle.scp.css"
     },
     {
+      "Id": "F:\\BookStore\\BookStore\\wwwroot\\css\\bootstrap (2).css",
+      "PackagePath": "staticwebassets\\css\\bootstrap (2).css"
+    },
+    {
       "Id": "F:\\BookStore\\BookStore\\wwwroot\\css\\bootstrap.min (4).css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min (4).css"
+    },
+    {
+      "Id": "F:\\BookStore\\BookStore\\wwwroot\\css\\bootstrap.min (6).css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min (6).css"
     },
     {
       "Id": "F:\\BookStore\\BookStore\\wwwroot\\css\\site.css",

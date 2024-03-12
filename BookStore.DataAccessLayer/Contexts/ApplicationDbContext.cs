@@ -1,14 +1,15 @@
 ﻿
 using BookStore.DataAccessLayer.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookStore.DataAccessLayer.Contexts
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-       //public ApplicationDbContext(DbContextOptions options) : base(options)
-       // { 
-       // }
+        //public ApplicationDbContext(DbContextOptions options) : base(options)
+        // { 
+        // }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -22,6 +23,6 @@ namespace BookStore.DataAccessLayer.Contexts
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
 
-        
+
     }
 }

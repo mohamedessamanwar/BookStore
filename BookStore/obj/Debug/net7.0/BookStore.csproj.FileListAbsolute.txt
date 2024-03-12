@@ -257,3 +257,5 @@ F:\BookStore\BookStore\obj\Debug\net7.0\BookStore.pdb
 F:\BookStore\BookStore\obj\Debug\net7.0\BookStore.genruntimeconfig.cache
 F:\BookStore\BookStore\obj\Debug\net7.0\ref\BookStore.dll
 F:\BookStore\BookStore\bin\Debug\net7.0\libman.json
+F:\BookStore\BookStore\obj\Debug\net7.0\BookStore.sourcelink.json
+F:\BookStore\BookStore\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

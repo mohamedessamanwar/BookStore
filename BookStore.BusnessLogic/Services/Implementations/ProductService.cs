@@ -1,15 +1,11 @@
-﻿using BookStore.BusnessLogic.Services.Interfaces;
+﻿
+using BookStore.BusnessLogic.Helper;
+using BookStore.BusnessLogic.Services.Interfaces;
 using BookStore.BusnessLogic.ViewsModels.Product;
+using BookStore.BusnessLogic.ViewsModels.ShoppingCart;
 using BookStore.DataAccessLayer.Interfaces;
 using BookStore.DataAccessLayer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BookStore.DataAccessLayer.Models;
 using Microsoft.AspNetCore.Http;
-using BookStore.BusnessLogic.Helper;
 using Microsoft.IdentityModel.Tokens;
 namespace BookStore.BusnessLogic.Services.Implementations
 {
@@ -20,17 +16,17 @@ namespace BookStore.BusnessLogic.Services.Implementations
         {
             _unitOfWork = unitOfWork;
         }
-        public async Task<List<ProductView>> GetProductsAsync(string searchValue , int skip , int take )
+        public async Task<List<ProductView>> GetProductsAsync(string searchValue, int skip, int take)
         {
             List<Product> products = (await _unitOfWork.GetRepository<Product>().Fillter(searchValue.IsNullOrEmpty() ? null : m =>
-               m.Name.Contains(searchValue) || m.Author.Contains(searchValue),skip,take,new[] { "Category" })).ToList<Product>();
+               m.Name.Contains(searchValue) || m.Author.Contains(searchValue), skip, take, new[] { "Category" })).ToList<Product>();
             return products.Select(p => new ProductView
             {
                 Id = p.Id,
                 Price = p.Price,
                 Author = p.Author,
                 Name = p.Name,
-                Category =  p.Category.Name 
+                Category = p.Category.Name
 
 
             }).ToList();
@@ -53,7 +49,7 @@ namespace BookStore.BusnessLogic.Services.Implementations
                 active = createProduct.active,
                 CategoryId = createProduct.CategoryId
             });
-            return _unitOfWork.Complete() ; 
+            return _unitOfWork.Complete();
         }
 
         public async Task<String> SaveImage(IFormFile image)
@@ -67,7 +63,7 @@ namespace BookStore.BusnessLogic.Services.Implementations
 
         public async Task<UpdateProduct> GetProductUpdate(int id)
         {
-           Product product =  _unitOfWork.GetRepository<Product>().Find(p=> p.Id == id , new[] { "Category" });
+            Product product = _unitOfWork.GetRepository<Product>().Find(p => p.Id == id, new[] { "Category" });
 
             return new UpdateProduct
             {
@@ -77,9 +73,9 @@ namespace BookStore.BusnessLogic.Services.Implementations
                 Price = product.Price,
                 Author = product.Author,
                 LastPrice = product.LastPrice,
-                ImageUrl = product.ImageUrl , 
-                CategoryId = product.CategoryId , 
-                active = product.active 
+                ImageUrl = product.ImageUrl,
+                CategoryId = product.CategoryId,
+                active = product.active
             };
 
 
@@ -87,47 +83,54 @@ namespace BookStore.BusnessLogic.Services.Implementations
         public async Task<string> ProductUpdate(UpdateProduct updateProduct, int id)
         {
             Product product = _unitOfWork.GetRepository<Product>().Find(p => p.Id == id, new[] { "Category" });
-             if (product == null)
-             {
+            if (product == null)
+            {
                 return "Product is not exixt";
-             }
-             string old  = product.ImageUrl;
-             var image = updateProduct.Image;
-             string currunt = "";
+            }
+            string old = product.ImageUrl;
+            var image = updateProduct.Image;
+            string currunt = "";
+
+
+            product.Price = updateProduct.Price;
+            product.LastPrice = updateProduct.LastPrice;
+            //product.ImageUrl = currunt;
+            product.CategoryId = updateProduct.CategoryId;
+            product.Description = updateProduct.Description;
+            product.Author = updateProduct.Author;
+            product.Name = updateProduct.Name;
+            product.active = updateProduct.active;
 
             if (image != null)
-             {
-                 currunt = await SaveImage(image);
-             }
-             product.Price= updateProduct.Price;
-             product.LastPrice= updateProduct.LastPrice;
-             product.ImageUrl = currunt;
-             product.CategoryId = updateProduct.CategoryId;
-             product.Description = updateProduct.Description;
-             product.Author = updateProduct.Author;
-             product.Name = updateProduct.Name;
-             product.active = updateProduct.active;
-             _unitOfWork.GetRepository<Product>().Update(product); ;
-             var result = _unitOfWork.Complete();
-            if (result > 0)
+            {
+                currunt = await SaveImage(image);
+                product.ImageUrl = currunt;
+            }
+            _unitOfWork.GetRepository<Product>().Update(product); ;
+            var result = _unitOfWork.Complete();
+            if (result > 0 && image != null)
             {
                 var coverr = Path.Combine(Seting.ImagesPath, old);
                 File.Delete(coverr);
                 return "";
             }
-            else
+            if (result < 0 && image != null)
             {
                 var cover = Path.Combine(Seting.ImagesPath, product.ImageUrl);
                 File.Delete(cover);
                 return "product is not update";
             }
+
+
+
+            return "";
         }
 
         public async Task<bool> Delete(int id)
         {
             Product product = _unitOfWork.GetRepository<Product>().GetById(id);
 
-            if (product == null) 
+            if (product == null)
             {
                 return false;
             }
@@ -141,6 +144,40 @@ namespace BookStore.BusnessLogic.Services.Implementations
             return false;
 
 
+        }
+
+        public async Task<List<ProductView>> GetProductsAsyncWithoutFillter()
+        {
+            List<Product> products = (await _unitOfWork.GetRepository<Product>().FindWithIncludsAsync(new[] { "Category" })).ToList();
+            return products.Select(p => new ProductView
+            {
+                Id = p.Id,
+                Price = p.Price,
+                Author = p.Author,
+                Name = p.Name,
+                Category = p.Category.Name,
+                imageUrl = p.ImageUrl,
+                LastPrice = p.LastPrice
+
+
+            }).ToList();
+        }
+
+        public async Task<CartView> ProductCart(int id)
+        {
+            var p = (_unitOfWork.GetRepository<Product>().Find(p => p.Id == id, new[] { "Category" }));
+            return new CartView
+            {
+                Id = p.Id,
+                Price = p.Price,
+                Author = p.Author,
+                Name = p.Name,
+                Category = p.Category.Name,
+                imageUrl = p.ImageUrl,
+                LastPrice = p.LastPrice
+
+
+            };
         }
     }
 }

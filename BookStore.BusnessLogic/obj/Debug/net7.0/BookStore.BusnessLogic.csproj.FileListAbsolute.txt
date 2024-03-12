@@ -13,3 +13,4 @@ F:\BookStore\BookStore.BusnessLogic\obj\Debug\net7.0\BookStore.BusnessLogic.dll
 F:\BookStore\BookStore.BusnessLogic\obj\Debug\net7.0\refint\BookStore.BusnessLogic.dll
 F:\BookStore\BookStore.BusnessLogic\obj\Debug\net7.0\BookStore.BusnessLogic.pdb
 F:\BookStore\BookStore.BusnessLogic\obj\Debug\net7.0\ref\BookStore.BusnessLogic.dll
+F:\BookStore\BookStore.BusnessLogic\obj\Debug\net7.0\BookStore.BusnessLogic.sourcelink.json

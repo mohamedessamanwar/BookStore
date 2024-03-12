@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gazHEDEtcL5ucyHk+3deFxHgJv/NtL0KNlaZsU+IRpA=",
+  "Hash": "2HE2pC548lWXyLgTImRxR30s/f9MqoTx4iyAm2MOpG8=",
   "Source": "BookStore",
   "BasePath": "_content/BookStore",
   "Mode": "Default",
@@ -55,6 +55,25 @@
       "OriginalItemSpec": "F:\\BookStore\\BookStore\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\BookStore.bundle.scp.css"
     },
     {
+      "Identity": "F:\\BookStore\\BookStore\\wwwroot\\css\\bootstrap (2).css",
+      "SourceId": "BookStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\BookStore\\BookStore\\wwwroot\\",
+      "BasePath": "_content/BookStore",
+      "RelativePath": "css/bootstrap (2).css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap (2).css"
+    },
+    {
       "Identity": "F:\\BookStore\\BookStore\\wwwroot\\css\\bootstrap.min (4).css",
       "SourceId": "BookStore",
       "SourceType": "Discovered",
@@ -72,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min (4).css"
+    },
+    {
+      "Identity": "F:\\BookStore\\BookStore\\wwwroot\\css\\bootstrap.min (6).css",
+      "SourceId": "BookStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\BookStore\\BookStore\\wwwroot\\",
+      "BasePath": "_content/BookStore",
+      "RelativePath": "css/bootstrap.min (6).css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min (6).css"
     },
     {
       "Identity": "F:\\BookStore\\BookStore\\wwwroot\\css\\site.css",

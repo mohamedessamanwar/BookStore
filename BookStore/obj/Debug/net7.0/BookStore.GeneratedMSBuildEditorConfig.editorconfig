@@ -18,8 +18,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = F:\BookStore\BookStore
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/BookStore/BookStore/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BookStore/BookStore/Views/Account/Regestration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdlc3RyYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/BookStore/BookStore/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BookStore/BookStore/Views/Category/IndexAsync.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXhBc3luYy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/BookStore/BookStore/Views/Home/Index.cshtml]
@@ -28,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/BookStore/BookStore/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BookStore/BookStore/Views/Product/CartView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDYXJ0Vmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/BookStore/BookStore/Views/Product/Create.cshtml]

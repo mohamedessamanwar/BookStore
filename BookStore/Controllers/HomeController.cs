@@ -1,4 +1,5 @@
-﻿using BookStore.Models;
+﻿using BookStore.BusnessLogic.Services.Interfaces;
+using BookStore.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -7,15 +8,18 @@ namespace BookStore.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IProductService _productService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IProductService productService)
         {
             _logger = logger;
+            _productService = productService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var product = await _productService.GetProductsAsyncWithoutFillter();
+            return View(product);
         }
 
         public IActionResult Privacy()

@@ -10,11 +10,11 @@
         "projectUniqueName": "F:\\BookStore\\BookStore.BusnessLogic\\BookStore.BusnessLogic.csproj",
         "projectName": "BookStore.BusnessLogic",
         "projectPath": "F:\\BookStore\\BookStore.BusnessLogic\\BookStore.BusnessLogic.csproj",
-        "packagesPath": "C:\\Users\\AL-FAJR\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\TEMP\\.nuget\\packages\\",
         "outputPath": "F:\\BookStore\\BookStore.BusnessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\AL-FAJR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TEMP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,11 +93,11 @@
         "projectUniqueName": "F:\\BookStore\\BookStore.DataAccessLayer\\BookStore.DataAccessLayer.csproj",
         "projectName": "BookStore.DataAccessLayer",
         "projectPath": "F:\\BookStore\\BookStore.DataAccessLayer\\BookStore.DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\AL-FAJR\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\TEMP\\.nuget\\packages\\",
         "outputPath": "F:\\BookStore\\BookStore.DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\AL-FAJR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TEMP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -123,6 +123,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.0, )"

@@ -1,11 +1,4 @@
-﻿using BookStore.DataAccessLayer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BookStore.BusnessLogic.ViewsModels.Product
+﻿namespace BookStore.BusnessLogic.ViewsModels.Product
 {
     public class ProductView
     {
@@ -17,6 +10,10 @@ namespace BookStore.BusnessLogic.ViewsModels.Product
         public string Author { get; set; }
 
         public Double Price { get; set; }
- 
+
+        public Double LastPrice { get; set; }
+
+        public string imageUrl { get; set; }
+
     }
 }
