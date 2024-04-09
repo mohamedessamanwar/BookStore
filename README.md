@@ -7,7 +7,7 @@ This is our Homepage.
 ![BookStore Homepage]([/BookStore/BookStore/wwwroot/siteScreen](https://github.com/mohamedessamanwar/BookStore/tree/main/BookStore/wwwroot/siteScreen)/homepage.png)
 
 In this area, the authorized person edits and deletes the products.
-![Product List](/BookStore/BookStore/wwwroot/siteScreen/productlist.png "Product List Page")
+![Product List]([/BookStore/BookStore/wwwroot/siteScreen](https://github.com/mohamedessamanwar/BookStore/tree/main/BookStore/wwwroot/siteScreen)/productlist.png "Product List Page")
 
 This page is for updating products.
 ![Update Product](/BookStore/BookStore/wwwroot/siteScreen/update_product.png "Update Product Page")
