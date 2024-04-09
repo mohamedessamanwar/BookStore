@@ -22,6 +22,10 @@ namespace BookStore.DataAccessLayer.Models
         [Required, MaxLength(50)]
         public string State { get; set; }
 
+        public int? Code { get; set; }
+
+
+
 
     }
 }

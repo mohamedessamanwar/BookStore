@@ -14,24 +14,44 @@ build_property.EnableComHosting =
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = F:\BookStore\BookStore
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/BookStore/BookStore/Views/Account/CodeView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb2RlVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BookStore/BookStore/Views/Account/ForgetPassward.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3JnZXRQYXNzd2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BookStore/BookStore/Views/Account/ForgotPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/BookStore/BookStore/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BookStore/BookStore/Views/Account/PasswordReset.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQYXNzd29yZFJlc2V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/BookStore/BookStore/Views/Account/Regestration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdlc3RyYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/BookStore/BookStore/Views/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/BookStore/BookStore/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/BookStore/BookStore/Views/Category/IndexAsync.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXhBc3luYy5jc2h0bWw=
+[F:/BookStore/BookStore/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/BookStore/BookStore/Views/Home/Index.cshtml]
@@ -40,6 +60,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/BookStore/BookStore/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BookStore/BookStore/Views/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BookStore/BookStore/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BookStore/BookStore/Views/Order/OrderConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJDb25maXJtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BookStore/BookStore/Views/Order/Summary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcU3VtbWFyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/BookStore/BookStore/Views/Product/CartView.cshtml]
@@ -64,6 +100,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/BookStore/BookStore/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BookStore/BookStore/Views/ShoppingCart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BookStore/BookStore/Views/ShoppingCart/OrderConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XE9yZGVyQ29uZmlybWF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/BookStore/BookStore/Views/ShoppingCart/Summary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XFN1bW1hcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/BookStore/BookStore/Views/_ViewImports.cshtml]

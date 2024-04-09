@@ -16,9 +16,9 @@ namespace BookStore.Controllers
             _productService = productService;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string name)
         {
-            var product = await _productService.GetProductsAsyncWithoutFillter();
+            var product = await _productService.GetProductsAsyncWithoutFillter(name);
             return View(product);
         }
 

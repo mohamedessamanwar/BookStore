@@ -1,6 +1,5 @@
 ﻿using BookStore.BusnessLogic.Services.Interfaces;
 using BookStore.BusnessLogic.ViewsModels.Caategory;
-using BookStore.DataAccessLayer.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookStore.Controllers
@@ -13,13 +12,26 @@ namespace BookStore.Controllers
         {
             _categoryService = categoryService;
         }
-
-        public async Task<IActionResult> IndexAsync()
+        public async Task<IActionResult> Index()
         {
-           var categories = await _categoryService.ViewCategory();
-            return View(categories);
+
+            return View();
+
         }
-      
+
+        public async Task<IActionResult> Indexjson()
+        {
+            var pageSize = int.Parse(Request.Form["length"]);
+            var skip = int.Parse(Request.Form["start"]);
+            var searchValue = Request.Form["search[value]"];
+            var data = await _categoryService.ViewCategory(searchValue, skip, pageSize);
+            var recordsTotal = data.Count();
+            var jsonData = new { recordsFiltered = recordsTotal, recordsTotal, data };
+            return Ok(jsonData);
+
+        }
+
+
         public async Task<IActionResult> CreateAsync()
         {
             return View();
@@ -27,12 +39,12 @@ namespace BookStore.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateAsync(CategoryCreateDataView categoryCreateDataView)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return View(categoryCreateDataView);
             }
             var categories = await _categoryService.CreateCategory(categoryCreateDataView);
-            return RedirectToAction(nameof(IndexAsync));
+            return RedirectToAction(nameof(Index));
         }
 
     }

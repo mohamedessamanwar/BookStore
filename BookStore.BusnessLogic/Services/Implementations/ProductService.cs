@@ -146,9 +146,14 @@ namespace BookStore.BusnessLogic.Services.Implementations
 
         }
 
-        public async Task<List<ProductView>> GetProductsAsyncWithoutFillter()
+        public async Task<List<ProductView>> GetProductsAsyncWithoutFillter(string name)
         {
             List<Product> products = (await _unitOfWork.GetRepository<Product>().FindWithIncludsAsync(new[] { "Category" })).ToList();
+            if (name != null)
+            {
+                products = products.Where(p => p.Name.Contains(name)).ToList();
+
+            }
             return products.Select(p => new ProductView
             {
                 Id = p.Id,

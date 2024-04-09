@@ -28,14 +28,21 @@
                 </label>
             </div>
             <div class="mt-3" class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Login" class="btn btn-primary" />
             </div>
+            <!-- External login with Google -->
+            <a class="btn btn-outline-danger mt-3" href="https://accounts.google.com/o/oauth2/v2/auth?client_id=293910106819-s36s1fg4qfae6b2eqhj4opg7b1lfirhg.apps.googleusercontent.com&redirect_uri=https://localhost:44326/&response_type=code&scope=email%20profile&access_type=offline">Login with Google</a>
+
         </form>
     </div>
 </div>
 
+
+
 <div>
     <a class="mt-3" asp-action="Regestration">Regestration</a>
+
+    <a class="mt-3" asp-action="ForgetPassward">ForgetPassward</a>
 </div>
 
 @section Scripts {

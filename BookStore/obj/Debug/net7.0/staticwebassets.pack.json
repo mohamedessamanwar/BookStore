@@ -1,8 +1,24 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\TEMP\\.nuget\\packages\\ntoastnotify\\8.0.0\\contentFiles\\any\\net6.0\\wwwroot\\noty.js",
+      "PackagePath": "staticwebassets\\noty.js"
+    },
+    {
+      "Id": "C:\\Users\\TEMP\\.nuget\\packages\\ntoastnotify\\8.0.0\\contentFiles\\any\\net6.0\\wwwroot\\toastr.js",
+      "PackagePath": "staticwebassets\\toastr.js"
+    },
+    {
       "Id": "F:\\BookStore\\BookStore\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\BookStore.bundle.scp.css",
       "PackagePath": "staticwebassets\\BookStore.bundle.scp.css"
+    },
+    {
+      "Id": "F:\\BookStore\\BookStore\\wwwroot\\assets\\images\\products\\e6796547-3839-4e98-820a-a0299e4fba9a.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\e6796547-3839-4e98-820a-a0299e4fba9a.jpg"
+    },
+    {
+      "Id": "F:\\BookStore\\BookStore\\wwwroot\\assets\\images\\products\\eff7db82-d102-4bfd-9b1b-38601969c510.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\eff7db82-d102-4bfd-9b1b-38601969c510.jpg"
     },
     {
       "Id": "F:\\BookStore\\BookStore\\wwwroot\\css\\bootstrap (2).css",
@@ -23,6 +39,26 @@
     {
       "Id": "F:\\BookStore\\BookStore\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "F:\\BookStore\\BookStore\\wwwroot\\js\\Category\\Index.js",
+      "PackagePath": "staticwebassets\\js\\Category\\Index.js"
+    },
+    {
+      "Id": "F:\\BookStore\\BookStore\\wwwroot\\js\\Order\\OrderDetails.js",
+      "PackagePath": "staticwebassets\\js\\Order\\OrderDetails.js"
+    },
+    {
+      "Id": "F:\\BookStore\\BookStore\\wwwroot\\js\\Order\\OrderView.js",
+      "PackagePath": "staticwebassets\\js\\Order\\OrderView.js"
+    },
+    {
+      "Id": "F:\\BookStore\\BookStore\\wwwroot\\js\\Product\\CartView.js",
+      "PackagePath": "staticwebassets\\js\\Product\\CartView.js"
+    },
+    {
+      "Id": "F:\\BookStore\\BookStore\\wwwroot\\js\\Product\\Detalies.Js",
+      "PackagePath": "staticwebassets\\js\\Product\\Detalies.Js"
     },
     {
       "Id": "F:\\BookStore\\BookStore\\wwwroot\\js\\Product\\Index.Js",
@@ -423,6 +459,34 @@
     {
       "Id": "F:\\BookStore\\BookStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "F:\\BookStore\\BookStore\\wwwroot\\sweetalert2\\sweetalert2.all.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\sweetalert2.all.js"
+    },
+    {
+      "Id": "F:\\BookStore\\BookStore\\wwwroot\\sweetalert2\\sweetalert2.all.min.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\sweetalert2.all.min.js"
+    },
+    {
+      "Id": "F:\\BookStore\\BookStore\\wwwroot\\sweetalert2\\sweetalert2.css",
+      "PackagePath": "staticwebassets\\sweetalert2\\sweetalert2.css"
+    },
+    {
+      "Id": "F:\\BookStore\\BookStore\\wwwroot\\sweetalert2\\sweetalert2.d.ts",
+      "PackagePath": "staticwebassets\\sweetalert2\\sweetalert2.d.ts"
+    },
+    {
+      "Id": "F:\\BookStore\\BookStore\\wwwroot\\sweetalert2\\sweetalert2.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\sweetalert2.js"
+    },
+    {
+      "Id": "F:\\BookStore\\BookStore\\wwwroot\\sweetalert2\\sweetalert2.min.css",
+      "PackagePath": "staticwebassets\\sweetalert2\\sweetalert2.min.css"
+    },
+    {
+      "Id": "F:\\BookStore\\BookStore\\wwwroot\\sweetalert2\\sweetalert2.min.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\sweetalert2.min.js"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BookStore.Microsoft.AspNetCore.StaticWebAssets.props",

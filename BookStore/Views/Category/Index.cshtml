@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "categories";
+}
+<link href="~/lib/datatables/css/dataTables.bootstrap4.css" rel="stylesheet" />
+<h1>category</h1>
+
+<p>
+    <a asp-action="Create">Create New Product</a>
+</p>
+<table id="TableCategory" class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+</table>
+
+@section scripts {
+    <script src="~/lib/datatables/js/jquery.datatables.js"></script>
+    <script src="~/lib/datatables/js/jquery.datatables.min.js"></script>
+    <script src="~/lib/datatables/js/datatables.bootstrap4.js"></script>
+    <script src="~/lib/datatables/js/datatables.bootstrap4.min.js"></script>
+    <script src="~/js/category/index.js"></script>
+
+    
+}

@@ -1,0 +1,22 @@
+﻿
+<div class="row mt-5">
+    <div class="col-md-4">
+        <h2>Enter Your Code</h2>
+    </div>
+</div>
+
+
+
+
+
+<div class="row mt-3">
+    <div class="col-md-4">
+        <form asp-controller="Account" asp-action="Cheackcode">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input name="code" type="text" class="form-control" />
+            </div>
+            <button type="submit" class="accordion-button m-2">Submit</button>
+        </form>
+    </div>
+</div>

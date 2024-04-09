@@ -7,12 +7,34 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\assets\images\products\18ab5feb-9be5-49c1-b872-f34361babec9.jpg" />
+    <Content Remove="wwwroot\assets\images\products\5fd4a74f-0e79-40f6-ae95-f47d62a890b2.jpg" />
+    <Content Remove="wwwroot\assets\images\products\64dec60f-0a82-4036-a831-06f75bc20036.jpg" />
+    <Content Remove="wwwroot\assets\images\wallpapersden.com_macos-big-sur-daylight_6016x6016.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="7.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.12" />
+    <PackageReference Include="NToastNotify" Version="8.0.0" />
+    <PackageReference Include="Stripe.net" Version="43.20.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BookStore.BusnessLogic\BookStore.BusnessLogic.csproj" />
     <ProjectReference Include="..\BookStore.DataAccessLayer\BookStore.DataAccessLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\js\Category\" />
+    <Folder Include="wwwroot\js\Order\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\images\products\18ab5feb-9be5-49c1-b872-f34361babec9.jpg" />
+    <None Include="wwwroot\assets\images\products\5fd4a74f-0e79-40f6-ae95-f47d62a890b2.jpg" />
+    <None Include="wwwroot\assets\images\products\64dec60f-0a82-4036-a831-06f75bc20036.jpg" />
+    <None Include="wwwroot\assets\images\wallpapersden.com_macos-big-sur-daylight_6016x6016.jpg" />
   </ItemGroup>
 
 </Project>

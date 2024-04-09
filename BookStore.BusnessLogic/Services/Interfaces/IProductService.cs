@@ -10,7 +10,7 @@ namespace BookStore.BusnessLogic.Services.Interfaces
         Task<List<ProductView>> GetProductsAsync(string searchValue, int skip, int take);
         Task<UpdateProduct> GetProductUpdate(int id);
         Task<string> ProductUpdate(UpdateProduct updateProduct, int id);
-        Task<List<ProductView>> GetProductsAsyncWithoutFillter();
+        Task<List<ProductView>> GetProductsAsyncWithoutFillter(string name);
 
         Task<CartView> ProductCart(int id);
     }

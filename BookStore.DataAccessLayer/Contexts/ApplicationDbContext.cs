@@ -7,9 +7,6 @@ namespace BookStore.DataAccessLayer.Contexts
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        //public ApplicationDbContext(DbContextOptions options) : base(options)
-        // { 
-        // }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -21,7 +18,15 @@ namespace BookStore.DataAccessLayer.Contexts
 
         // Tables
         public DbSet<Category> Categories { get; set; }
+
+        public DbSet<ShopingCart> ShopingCarts { get; set; }
+        public DbSet<ResetPasswordSecurty> ResetPasswordSecurty { get; set; }
+
         public DbSet<Product> Products { get; set; }
+
+        public DbSet<OrderHeader> orderHeaders { get; set; }
+
+        public DbSet<OrderDetail> orderDetails { get; set; }
 
 
     }

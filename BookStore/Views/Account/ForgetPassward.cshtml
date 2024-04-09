@@ -1,0 +1,23 @@
+﻿@using BookStore.BusnessLogic.ViewsModels.User
+@model ForgetPassward
+
+
+<div class="row mt-5">
+    <div class="col-md-4">
+       <h2>Enter Your Email</h2>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-4">
+        <form asp-action="ForgetPassward">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>  
+            <button type="submit" class="accordion-button m-2">Submit</button>
+        </form>
+    </div>
+</div>

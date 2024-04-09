@@ -1,0 +1,106 @@
+﻿@using BookStore.BusnessLogic.ViewsModels.ShoppingCart
+@model ShoppingCartDisplay
+<section class="h-100 h-custom">
+  <div class="container h-100 py-5">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" class="h5">Shopping Bag</th>
+               @*  <th scope="col">Format</th> *@
+                <th scope="col">Quantity</th>
+                <th scope="col">Action</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+                      
+            <tbody>
+                            @foreach (var product in Model.CartViews)
+                            {
+                                <tr>
+                                    <th scope="row">
+                                        <div class="d-flex align-items-center">
+                                            <img src="@($"/assets/images/products/{product.imageUrl}")" class="img-fluid rounded-3"
+                                                 style="width: 120px;" alt="Book">
+                                            <div class="flex-column ms-4">
+                                                <p class="mb-2">@product.Name</p>
+                                                <p class="mb-0">@product.Author</p>
+                                            </div>
+                                        </div>
+                                    </th>
+                                  
+                                   
+                                    <td class="actions" data-th="">
+                                        <div class="col-12  col-lg-5 text-center row">
+                                            <div class="col-4 text-md-right pt-4">
+                                                <h6><strong>@product.LastPrice.ToString("c")<span class="text-muted">&nbsp;x&nbsp;</span>@product.count</strong></h6>
+                                            </div>
+                                         
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="col-12 col-lg-5 text-center row">
+
+                                            <div class="col-6 col-sm-4 col-lg-6 pt-2">
+                                                <div class="w-75 btn-group" role="group">
+                                                    <a asp-action="Plus" asp-controller="ShoppingCart" asp-route-cartId="@product.CartId" class="btn btn-primary">
+                                                        <i class="bi bi-plus-square"></i>
+                                                    </a> &nbsp;
+                                                    <a asp-action="Remove" asp-controller="ShoppingCart" asp-route-cartId="@product.CartId" class="btn btn-danger">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </a> &nbsp;
+                                                    <a asp-action="Minus" asp-controller="ShoppingCart" asp-route-cartId="@product.CartId" class="btn btn-warning">
+                                                        <i class="bi bi-dash-square"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                          
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle">
+                                        <p class="mb-0" style="font-weight: 500;">@product.LastPrice</p>
+                                    </td>
+                                </tr>
+
+                            }
+                    
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card shadow-2-strong mb-5 mb-lg-0" style="border-radius: 16px;">
+          <div class="card-body p-4">
+
+            <div class="row">
+              <div class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-md-0">
+              
+              </div>
+           
+                <div class="d-flex justify-content-between mb-4" style="font-weight: 500;">
+                  <p class="mb-2">@($"Total (tax included)   ${@Model.TotalPrice} ")</p>
+                                <p class="mb-2">$@Model.TotalPrice</p>
+                </div>
+
+                <a asp-controller="Order" asp-action="Summary" class="btn btn-primary btn-block btn-lg">
+                  <div class="d-flex justify-content-between">
+                    <span>Checkout</span>
+                                    <span> @Model.TotalPrice</span>
+                  </div>
+                </a>
+           
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

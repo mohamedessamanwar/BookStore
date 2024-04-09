@@ -1,8 +1,9 @@
 ﻿@using BookStore.BusnessLogic.ViewsModels.ShoppingCart
 @model CartView
 
-<form method="post" class="mt-2">
-    <input asp-for="Id" hidden />
+@* <form method="Post" asp-action="AddToCart" asp-controller="ShoppingCart" class="mt-2"> *@
+    <input asp-for="Id"  value="@Model.Id" hidden />
+
     <div class="card container pt-4">
         <div class="card-header bg-primary text-light ml-0 row">
             <div class="col-12 col-md-6">
@@ -30,7 +31,10 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 text-center">
-                        <img src="@($"{BookStore.BusnessLogic.Helper.Seting.ImagesPath}/{Model.imageUrl}")" class="rounded img-fluid" style="max-height: 400px;" />
+                    <img src="@($"/assets/images/products/{Model.imageUrl}")" class="rounded img-fluid" style="max-height: 400px;" />
+                    @* <img src="/assets/images/products/5fd4a74f-0e79-40f6-ae95-f47d62a890b2.jpg" alt="Product Image">
+ *@
+
                     </div>
                     <div class="col-12 col-lg-8 mt-3">
                         <div class="row pl-2">
@@ -47,9 +51,20 @@
                     <a asp-action="Index" asp-controller="Home" class="btn btn-success form-control" style="height: 50px;">Home</a>
                 </div>
                 <div class="col-12 col-md-6 pb-1">
-                    <button type="submit" value="Add to Cart" class="btn btn-primary form-control" style="height: 50px;">Add to Cart</button>
+                    <button type="submit" id="submitBtn" value="Add to Cart" class="btn btn-primary form-control" style="height: 50px;">Add to Cart</button>
                 </div>
             </div>
         </div>
     </div>
-</form>
+@* </form> *@
+
+@section Scripts{
+    @* <script src="~/js/product/detalies.js"></script> *@
+   @*  <script src="f:\bookstore\bookstore\wwwroot\js\product\cartview.js"></script> *@
+    <script src="~/js/product/cartview.js"></script>
+    <!-- Include SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- Include SweetAlert2 JS -->
+    <script src="/path/to/sweetalert2.min.js"></script>
+
+}
