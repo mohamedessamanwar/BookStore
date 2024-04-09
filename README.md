@@ -4,7 +4,7 @@ This project was developed in accordance with SOLID principles with .NET 6.0 usi
 Our web application is designed entirely in English.
 
 This is our Homepage.
-![BookStore Homepage](/BookStore/BookStore/wwwroot/siteScreen/homepage.png)
+![BookStore Homepage]([/BookStore/BookStore/wwwroot/siteScreen](https://github.com/mohamedessamanwar/BookStore/tree/main/BookStore/wwwroot/siteScreen)/homepage.png)
 
 In this area, the authorized person edits and deletes the products.
 ![Product List](/BookStore/BookStore/wwwroot/siteScreen/productlist.png "Product List Page")
