@@ -1,6 +1,7 @@
-﻿@using BookStore.BusnessLogic.ViewsModels.ShoppingCart
+@using BookStore.BusnessLogic.ViewsModels.ShoppingCart
 @model CartView
-
+<link href="~/sweetalert2/sweetalert2.min.css" rel="stylesheet" />
+<link href="~/sweetalert2/sweetalert2.css" rel="stylesheet" />
 @* <form method="Post" asp-action="AddToCart" asp-controller="ShoppingCart" class="mt-2"> *@
     <input asp-for="Id"  value="@Model.Id" hidden />
 
@@ -59,12 +60,10 @@
 @* </form> *@
 
 @section Scripts{
-    @* <script src="~/js/product/detalies.js"></script> *@
-   @*  <script src="f:\bookstore\bookstore\wwwroot\js\product\cartview.js"></script> *@
-    <script src="~/js/product/cartview.js"></script>
-    <!-- Include SweetAlert2 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <!-- Include SweetAlert2 JS -->
-    <script src="/path/to/sweetalert2.min.js"></script>
 
+    <script src="~/js/product/cartview.js"></script>
+    <script src="~/sweetalert2/sweetalert2.all.min.js"></script>
+    <script src="~/sweetalert2/sweetalert2.all.js"></script>
+    <script src="~/sweetalert2/sweetalert2.min.js"></script>
+    <script src="~/sweetalert2/sweetalert2.js"></script>
 }
